@@ -1,0 +1,140 @@
+
+            body{
+                margin: 0;
+                min-width: 500px;
+                /*height: 100vh;
+                display: flex;
+                align-items: center;*/
+                background: rgba(235, 214, 214, 0.904);
+                
+            }
+            ul{
+                padding: 0;
+                list-style-type: none;
+            }
+            ul li {
+                box-sizing: border-box;
+                width: 14em;
+                height: 3em;
+                font-size: 20px;
+                border-radius: 0.5em;
+                margin: 1.5em;
+                box-shadow:  0 0 1em black;
+                color: white;
+                font-family: Kaisei Opti, sans-serif;
+                text-transform: capitalize;
+                line-height: 3em;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            /*ul li:nth-child(odd){
+                background: linear-gradient(to right, orange, tomato);
+                text-align: left;
+                padding-left: 10%;
+                transform: perspective(500px) rotateY(45deg);
+            }*/
+            ul li{
+                background: linear-gradient(to right, orange, tomato);
+                text-align: center;
+                transform: perspective(600px) rotateY(-45deg);
+            }
+            /*ul li:nth-child(odd):hover {
+                transform: perspective(200px) rotateY(45deg);
+                padding-left: 5%;
+            }*/
+            ul li:hover {
+                transform: perspective(200px) rotateY(-45deg);
+                padding-right: 5%;
+            }
+            main {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                height: 90vh;
+            }
+            main .home{
+                align-items: center;
+                justify-content: center;
+            }
+            /*.list ul {
+                position: fixed;
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }*/
+            .list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 90vh;
+            }
+
+
+        .fade {
+            animation: fade-in 1s;
+            opacity: 1;
+            }
+
+            .fade2 {
+                animation: fade-in 1s;
+                opacity: 1;
+                animation-delay: 2s;
+                }
+
+        @keyframes fade-in {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+        }
+        #SectionHome {
+            animation: fade-in 2s;
+        }
+        #Section1 {
+            display: none;
+        }
+        #Section2 {
+            display: none;
+        }
+        #Section3 {
+            display: none;
+        }
+        #Section4 {
+            display: none;
+        }
+        #Section5 {
+            display: none;
+        }
+        /*table css*/
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:16px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:16px;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+
+        h1 {
+            --s: 0.1em;   /* the thickness of the line */
+            --c: #da6a48; /* the color */
+            
+            color: #0000;
+            padding-bottom: var(--s);
+            background: 
+              linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+              linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+            -webkit-background-clip: text,padding-box;
+                    background-clip: text,padding-box;
+            transition: 0.5s;
+          }
+          h1:hover {--_p: 100%}
+          
+          h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Kaisei Opti, sans-serif;
+            font-size: 5rem;
+            cursor: pointer;
+          }
